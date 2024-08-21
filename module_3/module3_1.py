@@ -1,4 +1,4 @@
-pituus = int(input("syota kuhan pituus (cm): "))
+pituus = float(input("syota kuhan pituus (cm): "))
 
 if pituus < 37:
     print("Kuha on alamittainen. Heita takaisin veteen! ")
