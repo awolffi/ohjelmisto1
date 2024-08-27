@@ -1,5 +1,4 @@
 import random
-
 num = random.randint(1, 10)
 print(num)
 guess = int(input("Arvaa luku (1 - 10): "))
