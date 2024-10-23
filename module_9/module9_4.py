@@ -31,13 +31,17 @@ for x in range(10):
     cars.append(Car("ABC-"+str(x+1), r.randint(100,200)))
 
 race_hours = 0
+game_finito = False
 
-while True:
+while not game_finito:
     race_hours += 1
     for i in cars:
         acceleration = r.randint(-10, 16)
         i.cur_speed = acceleration
         i.drive(1)
         if i.distance > 10000:
-            break
+            game_finito = True
 
+print("number:", "max (km/h)", "distance:", sep="\t")
+for i in cars:
+    print(i.registration_number, i.max_speed,  "\t"+str(i.distance), sep="\t")
