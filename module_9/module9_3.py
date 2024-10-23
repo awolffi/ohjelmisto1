@@ -16,6 +16,12 @@ class Car:
             self.cur_speed = 0
     
     def drive(self, duration):
-        self.distance = self.cur_speed = 
+        self.distance += self.cur_speed * duration
 
-car1 =Car("ABC-123", 142)
+car1 = Car("ABC-123", 142)
+
+
+car1.accelerate(60)
+car1.drive(2)
+
+print(f"after driving 2 hours at 60 km/h the travelled distance is {car1.distance} km")
