@@ -1,7 +1,7 @@
 from flask import Flask
 
 app = Flask(__name__)
-@app.route('/alkuluku/<int:num>', methods=['GET'])
+@app.route('/alkuluku/<int:num>')
 def check_if_prime(num):
     
     if num > 1:
